@@ -4,29 +4,49 @@
     box-sizing: border-box;
 }
 
-.titulo{
+body {
 
-    font-size: 50px;
-    margin-bottom: 22px;
-    margin-top: 22px;
-    box-shadow: 7px 13px 37px #000;
-    background: rgb(82, 1, 82);
+    background-color: rgb(49, 2, 49) ;
+    
+}
+
+.titulo {
+
     color: white;
+    font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     
+    margin-bottom: 15px;
 
+
+}
+
+.re_in {
+
+    text-align: center;
+    margin-bottom: 40px;
+    color:white;
+}
+
+.re_in a{
+
+    color: white;
+
+}
+
+
+
+
+.cuerpo .tabla{
+
+    width: 50px;
+    height: 30px;
+    left: 15px;
+
+    
 
 
 }
 
-.datos {
-
-    font-size: 22px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: rgb(82, 1, 82);
 
 
-
-}
 
