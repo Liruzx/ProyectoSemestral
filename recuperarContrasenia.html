@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recover your password</title>
+    <link type ="text/css" rel="stylesheet" href="CSS/style.css">
+    <style>
+    body{
+    background: url(imagenes/fondoPaginaInicio.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+    </style>
+</head>
+
+<body>
+    
+
+    <section class="recuperarcontra" >
+
+        <h1 style="height: 60px;">Ingresa tu correo electrónico</h1>
+
+        <p style="margin-bottom: 15px;">Enviaremos un codigo a tu correo electrónico para recuperar tu contraseña</p>
+        
+        <input class="control" type="text" name="correo" id="correo" placeholder="Ingrese correo electronico">
+
+<!-- Este boton tiene que ser tipo submit para enviar un formulario pero no se como hacerlo sin js -->
+
+        <input class="boton" type="submit" value="Enviar" style="font-weight: 700"> 
+
+    </section>
+
+    <section class="recuperarcontra" >
+
+        <h1 style="height: 60px;">Ingresa el codigo</h1>
+
+        <p style="margin-bottom: 15px;">Ingresa el codigo enviado a tu correo electrónico</p>
+        
+        <input class="control" type="text" name="codigo" id="codigo" placeholder="Ingresa el código">
+
+<!-- Hacer validacion de codigo con js, aun no lo vemos pero el enzo le sabe creo -->
+
+
+       <a href="cambioDeContrasenia.html"> <input class="boton" type="submit" value="Verificar" style="font-weight: 700"> </a>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
