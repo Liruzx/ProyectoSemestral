@@ -27,7 +27,7 @@
 
 
 .registro {
-    float:right;
+    
     width: 400px;
     background-color:rgb(41, 39, 39);  
     padding: 30px;
@@ -106,6 +106,7 @@
     color: white;
     margin: 16px 0;
     font-size: 16px;
+    font-weight: 700px;
 
 
 }
@@ -113,7 +114,6 @@
  /* agregue el mismo formato pero cree nuevos "." para modificarlos  */
 
 .registropp {
-    float: right;
     width: 450px;
     background-color:rgb(41, 39, 39);  
     padding: 60px;
