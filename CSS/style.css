@@ -161,3 +161,13 @@
 
 
 }
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+form .grupo{
+    position: relative;
+    margin: 45px ;
+}
