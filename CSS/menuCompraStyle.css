@@ -148,19 +148,3 @@ th,td {
     color: white;
   }
 
-
-  .capa-padre {
-
-    min-height: 467px;
-    position: relative;
-}
-.capa-hijo {
-    left: 0;
-    margin: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-
-}
