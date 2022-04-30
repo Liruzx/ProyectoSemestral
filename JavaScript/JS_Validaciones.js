@@ -76,21 +76,7 @@ form.addEventListener("submit", e=>{
     }
     
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 } )
+
+//Aqui terminan las del enzo  ↥ ↥ ↥ ↥ ↥ ↥ ↥ ↥
+
