@@ -22,7 +22,7 @@ form.addEventListener("submit", e=>{
     if ( usuario.value.length < 1 ) {
 
 
-        men += "Debe ingresar un usuario<br>";
+        men += "Debe ingresar un usuario.<br>";
         entrar = true;
 
     } 
@@ -32,7 +32,7 @@ form.addEventListener("submit", e=>{
 
     }else{
 
-        men+="Debe ingresar un correo valido<br>"
+        men+="Debe ingresar un correo válido.<br>"
         entrar=true
 
     }
@@ -42,7 +42,7 @@ form.addEventListener("submit", e=>{
         
     }else{
 
-        men+= "Debe ingresar la fecha de esta forma DD/MM/YY<br>"
+        men+= "Debe ingresar la fecha con el siguiente formato: DD/MM/AA<br>"
         entrar = true
 
     }
@@ -50,7 +50,7 @@ form.addEventListener("submit", e=>{
 
     if (contra.value.length == 0){
 
-        men += "Debe ingresar una contraseña válida<br>";
+        men += "Debe ingresar una contraseña válida.<br>";
         entrar = true;
 
 
@@ -59,7 +59,7 @@ form.addEventListener("submit", e=>{
 
     if (contra.value != confi_contra.value ){
 
-        men += "Sus contraseñas deben coincidir"
+        men += "Sus contraseñas deben coincidir."
         entrar = true
 
     }
