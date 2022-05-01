@@ -50,7 +50,7 @@ form.addEventListener("submit", e=>{
 
     if (contra.value.length == 0){
 
-        men += "Debe ingresar una contraseña valida<br>";
+        men += "Debe ingresar una contraseña válida<br>";
         entrar = true;
 
 

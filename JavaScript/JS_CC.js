@@ -16,7 +16,7 @@ form2.addEventListener("submit", e=>{
 
 if (cambiodecontra.value.length < 7){
 
-    men2 += "Debe ingresar una contraseña valida. Esta debe ser mayor a 7 caracteres.<br>";
+    men2 += "Debe ingresar una contraseña válida. Esta debe ser mayor a 7 caracteres.<br>";
     entrar = true;
 
 
@@ -29,6 +29,20 @@ if (cambiodecontra.value != cambiodecontra2.value ){
     entrar = true
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 if(entrar){
