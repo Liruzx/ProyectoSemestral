@@ -33,18 +33,6 @@ if (cambiodecontra.value != cambiodecontra2.value ){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 if(entrar){
     mensaje2.innerHTML = men2
     
