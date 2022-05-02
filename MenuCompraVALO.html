@@ -34,12 +34,81 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent" role="button">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="Registro.html">Register</a></li>
+            <li class="nav-item"><a class="nav-link" href="paginaPrincipal.html">Sign in</a></li>
+            <li class="nav-item"><select id="moneda-uno">
+                <!-- solo CLP porque la pág el chilena bruh -->
+                <option value="CLP" selected>CLP</option>
+              </select>
+              <input type="number" id="cantidad-uno" placeholder="0">
+            </li>
+            <li class="nav-item">
+              <div class="moneda">
+                <select id="moneda-dos">
 
-                    <li class="nav-item"><a class="nav-link" href="Registro.html">Register</a></li>
-                    <li class="nav-item"><a class="nav-link" href="paginaPrincipal.html">Sign in</a></li>
-                </ul>
+                  <option value="AED">AED</option>
+                  <option value="ARS">ARS</option>
+                  <option value="AUD">AUD</option>
+                  <option value="BGN">BGN</option>
+                  <option value="BRL">BRL</option>
+                  <option value="BSD">BSD</option>
+                  <option value="CAD">CAD</option>
+                  <option value="CHF">CHF</option>
+                  <option value="CLP">CLP</option>
+                  <option value="CNY">CNY</option>
+                  <option value="COP">COP</option>
+                  <option value="CZK">CZK</option>
+                  <option value="DKK">DKK</option>
+                  <option value="DOP">DOP</option>
+                  <option value="EGP">EGP</option>
+                  <option value="EUR">EUR</option>
+                  <option value="FJD">FJD</option>
+                  <option value="GBP">GBP</option>
+                  <option value="GTQ">GTQ</option>
+                  <option value="HKD">HKD</option>
+                  <option value="HRK">HRK</option>
+                  <option value="HUF">HUF</option>
+                  <option value="IDR">IDR</option>
+                  <option value="ILS">ILS</option>
+                  <option value="INR">INR</option>
+                  <option value="ISK">ISK</option>
+                  <option value="JPY">JPY</option>
+                  <option value="KRW">KRW</option>
+                  <option value="KZT">KZT</option>
+                  <option value="MXN">MXN</option>
+                  <option value="MYR">MYR</option>
+                  <option value="NOK">NOK</option>
+                  <option value="NZD">NZD</option>
+                  <option value="PAB">PAB</option>
+                  <option value="PEN">PEN</option>
+                  <option value="PHP">PHP</option>
+                  <option value="PKR">PKR</option>
+                  <option value="PLN">PLN</option>
+                  <option value="PYG">PYG</option>
+                  <option value="RON">RON</option>
+                  <option value="RUB">RUB</option>
+                  <option value="SAR">SAR</option>
+                  <option value="SEK">SEK</option>
+                  <option value="SGD">SGD</option>
+                  <option value="THB">THB</option>
+                  <option value="TRY">TRY</option>
+                  <option value="TWD">TWD</option>
+                  <option value="UAH">UAH</option>
+                  <option value="USD" selected>USD</option>
+                  <option value="UYU">UYU</option>
+                  <option value="VND">VND</option>
+                  <option value="ZAR">ZAR</option>
+
+                </select>
+                <input type="number" id="cantidad-dos" placeholder="0" readonly>
+                <div class="taza-cambio-container">
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"> <div style="color:white;" class="cambio" id="cambio"></div> <!-- todo esto tiene sentido en el js --></li>
+          </ul>
             </div>
 
         </div>
@@ -161,172 +230,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-
+    <script src="JavaScript/script.js" ></script>
 </body>
 
 </html>
 
-
-
-<!--  <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compra</title>
-    <link rel="stylesheet" href="CSS/menuCompraStyle.css">
-
-    <style>
-        body{
-        background: url(imagenes/fondoPaginaInicio.webp);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        }
-    </style>
-
-
-</head>
-
-
-<body>
-
-    <section class = titulo>
-
-
-        <a style="float: left;" href="MenuPrincipal.html"><img src="imagenes/pruebaLogo2.png" alt="" width="200" height="80" > </a>
-
-
-
-    </section>
-
-
-    <section class="productos">
-
-
-        <table border="3" style="background-color: rgb(41, 39, 39);">
-    
-    
-    
-            <tr>
-                
-                <th><h1>Imagen</h1></th>
-                <th><h1>Nombre</h1></th>
-                <th><h1>Vendedor</h1></th>
-                <th><h1>Precio</h1></th>
-                
-                
-            </tr>
-    
-            <tr>
-                <td><img src="imagenes/vandal.jpg" width="200" alt="ecko"></td>
-                <td><p>Vandal Prime </p></td>
-                <td><p>Chandler</p></td>
-                <td><p>8.000 CLP</p></td>
-                <td> <a href="chatCompra.html"><input class="boton" type="submit" value="Comprar" style="font-weight: 700"></a> </td>
-               
-    
-    
-            </tr>
-    
-            <tr>
-                
-                <td><img src="imagenes/operator.jpg" width="200" alt="ecko"></td>
-                <td><p>Operator Elderflame </p></td>
-                <td><p>Gatopeniwais</p></td>
-                <td><p>10.000 CLP</p></td>
-                <td> <a href="chatCompra.html"><input class="boton" type="submit" value="Comprar" style="font-weight: 700"></a></td>
-               
-    
-    
-            </tr>
-    
-            <tr>
-                
-                <td><img src="imagenes/balisong.jpg" width="200" alt="ecko"></td>
-                <td><p>Balisong Recon </p></td>
-                <td><p>Jettlag</p></td>
-                <td><p>20.000 CLP</p></td>
-                <td> <a href="chatCompra.html"><input class="boton" type="submit" value="Comprar" style="font-weight: 700"></a></td>
-               
-    
-    
-            </tr>
-    
-        </table>
-    
-    
-        </section>
-
-
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--   
-    <center>
-    <h1>Lista de Skins</h1>
-    </center>
-    <br>
- <center>
-    <table border="1">
-        <tr>
-            
-            <th><h1>Nombre</h1></th>
-            <th><h1>Vendedor</h1></th>
-            <th><h1>Precio</h1></th>
-            
-            
-        </tr>
-        <tr>
-
-            <td>Vandal Prime</td>
-            <td>Chandler</td>
-            <td>8.000 CLP</td>
-            <td><a href="">Comprar</a></td>
-
-        </tr>
-        <tr>
-
-            <td>Operator Elderflame</td>
-            <td>Gatopeniwais</td>
-            <td>10.000 CLP</td>
-            <td><a href="">Comprar</a></td>
-        </tr>
-        <tr>
-            
-            <td>Balisong Recon</td>
-            <td>Jettlag</td>
-            <td>20.000 CLP</td>
-            <td><a href="">Comprar</a></td>
-
-        </tr>
-    </table>
- </center>
-
-
-
-
-
-</body>
-
-</html>
--->
