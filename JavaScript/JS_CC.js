@@ -37,7 +37,8 @@ if(entrar){
     mensaje2.innerHTML = men2
     
 }else{
-    mensaje2.innerHTML = 'Registrado'
+    
+    mensaje2.innerHTML = '<p>Cambio exitoso</p> <a  href="mensajeCambioContrasenia.html">Presione aqui</a>'
     
 }
 
