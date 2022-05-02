@@ -6,6 +6,7 @@ const cambioEl = document.getElementById('cambio');
 const tazaEl = document.getElementById('taza');
 
 
+
 /* Función con el fetch */
 /* No entendí mucho, solo seguí los pasos de un PE */
 function calculate(){
@@ -17,7 +18,7 @@ function calculate(){
    .then(data => {
        const taza = data.rates[moneda_two];
        
-       cambioEl.innerText = ` ${moneda_one} = ${taza} ${moneda_two}`;
+       cambioEl.innerText = `1 ${moneda_one} = ${taza} ${moneda_two}`;
 
        cantidadEl_two.value = (cantidadEl_one.value * taza).toFixed(2);
 
@@ -30,13 +31,5 @@ monedaEl_one.addEventListener('change', calculate);
 cantidadEl_one.addEventListener('input', calculate);
 monedaEl_two.addEventListener('change', calculate);
 cantidadEl_two.addEventListener('input', calculate);
-
-taza.addEventListener('click', () =>{
-    const temp = monedaEl_one.value;
-    monedaEl_one.value = monedaEl_two.value;
-    monedaEl_two.value = temp;
-    calculate();
-} );
-
 
 calculate();
