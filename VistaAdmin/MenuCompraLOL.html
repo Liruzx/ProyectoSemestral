@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="CSS/menuCompraStyle.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
- 
+
   <style>
     body {
       background: url(imagenes/posibleFondo6.webp);
@@ -49,222 +49,9 @@
     </div>
   </nav>
 
-
-  <div class="container">
-
-
-
-
-    <div class="row">
-
-
-      <div class="col-md-6">
-        <select id="moneda-uno">
-          <!-- solo CLP porque la pág el chilena bruh -->
-          <option value="CLP" selected>CLP</option>
-        </select>
-        <input type="number" id="cantidad-uno" placeholder="0">
-        <!-- readonly para que no pueda modificar el precio -->
-
-
-
-      </div>
-      
-      <div class="col-md-6">
-
-        <div class="moneda">
-          <select id="moneda-dos">
-  
-            <option value="AED">AED</option>
-            <option value="ARS">ARS</option>
-            <option value="AUD">AUD</option>
-            <option value="BGN">BGN</option>
-            <option value="BRL">BRL</option>
-            <option value="BSD">BSD</option>
-            <option value="CAD">CAD</option>
-            <option value="CHF">CHF</option>
-            <option value="CLP">CLP</option>
-            <option value="CNY">CNY</option>
-            <option value="COP">COP</option>
-            <option value="CZK">CZK</option>
-            <option value="DKK">DKK</option>
-            <option value="DOP">DOP</option>
-            <option value="EGP">EGP</option>
-            <option value="EUR">EUR</option>
-            <option value="FJD">FJD</option>
-            <option value="GBP">GBP</option>
-            <option value="GTQ">GTQ</option>
-            <option value="HKD">HKD</option>
-            <option value="HRK">HRK</option>
-            <option value="HUF">HUF</option>
-            <option value="IDR">IDR</option>
-            <option value="ILS">ILS</option>
-            <option value="INR">INR</option>
-            <option value="ISK">ISK</option>
-            <option value="JPY">JPY</option>
-            <option value="KRW">KRW</option>
-            <option value="KZT">KZT</option>
-            <option value="MXN">MXN</option>
-            <option value="MYR">MYR</option>
-            <option value="NOK">NOK</option>
-            <option value="NZD">NZD</option>
-            <option value="PAB">PAB</option>
-            <option value="PEN">PEN</option>
-            <option value="PHP">PHP</option>
-            <option value="PKR">PKR</option>
-            <option value="PLN">PLN</option>
-            <option value="PYG">PYG</option>
-            <option value="RON">RON</option>
-            <option value="RUB">RUB</option>
-            <option value="SAR">SAR</option>
-            <option value="SEK">SEK</option>
-            <option value="SGD">SGD</option>
-            <option value="THB">THB</option>
-            <option value="TRY">TRY</option>
-            <option value="TWD">TWD</option>
-            <option value="UAH">UAH</option>
-            <option value="USD" selected>USD</option>
-            <option value="UYU">UYU</option>
-            <option value="VND">VND</option>
-            <option value="ZAR">ZAR</option>
-  
-          </select>
-          <input type="number" id="cantidad-dos" placeholder="0" readonly>
-          <div class="taza-cambio-container">
-  
-            <div class="cambio" id="cambio"></div> <!-- todo esto tiene sentido en el js -->
-  
-          </div>
-        </div>
-
-
-
-      </div>
-    
-    
-      
-
-
-
-
-
-
-
-    </div>
-
-
-   <div class="row">
-
-
-    <div class="col-md-4">
-      <div class="card " style="width: 18rem; margin-top: 15px;">
-
-        <img src="imagenes/eckoTrueDamage.jpg" class="card-img-top" alt="ecko">
-
-        <div class="card-body">
-
-          <h5 class="card-title" style="text-align: center;" >Ecko True Damage</h5>
-          <p class="card-text" style="text-align: center;">YasuoMain</p>
-          <p class="card-text" style="text-align: center;">5.000 CLP</p>
-          <a href="" class="btn btn-dark" >Comprar</a>
-
-
-        </div>
-
-      </div> 
-    </div> 
-
-    <div class="col-md-4">
-
-      <div class="card " style="width: 18rem; margin-top: 15px;">
-
-        <img src="imagenes/sorakaPijamaEstelar.jpg" class="card-img-top" alt="ecko">
-
-        <div class="card-body">
-
-          <h5 class="card-title" style="text-align: center;" >Soraka Pijama Estelar</h5>
-          <p class="card-text" style="text-align: center;">YummiAD</p>
-          <p class="card-text" style="text-align: center;">12.000 CLP</p>
-          <a href="" class="btn btn-dark" >Comprar</a>
-
-
-        </div>
-
-      </div> 
-
-
-    </div>
-
-    <div class="col-md-4">
-
-
-      <div class="card " style="width: 18rem; margin-top: 15px;">
-
-        <img src="imagenes/threshFlorEspiritual.jpg" class="card-img-top" alt="ecko">
-
-        <div class="card-body">
-
-          <h5 class="card-title" style="text-align: center;" >Thresh Flor Espiritual</h5>
-          <p class="card-text" style="text-align: center;">GarenAP</p>
-          <p class="card-text" style="text-align: center;">9.000 CLP</p>
-          <a href="" class="btn btn-dark" >Comprar</a>
-
-
-        </div>
-
-      </div> 
-
-
-
-    </div>
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <!-- código de la tabla 
-
-  
+  <!-- código de la tabla -->
   <div class="container mt-3">
-    <!-- mt-3 da una especie de margin 
+    <!-- mt-3 da una especie de margin -->
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
@@ -303,22 +90,22 @@
               </tr>
             </tbody>
           </table>
-        </div> <!-- div del resposive table 
-      </div> <!-- div del col-sm-10 
+        </div> <!-- div del resposive table -->
+      </div> <!-- div del col-sm-10 -->
       <div class="col-sm-1"></div>
 
-    </div> <!-- div del row
-  </div> <!-- div del container 
+    </div> <!-- div del row -->
+  </div> <!-- div del container -->
 
   <div class="row">
     <div class="col-sm-12">
       <footer class="bg-dark text-center text-white">
-        <!-- Grid container 
+        <!-- Grid container -->
         <div class="container p-4 pb-0">
-          <!-- Section: Social media 
+          <!-- Section: Social media -->
           <section class="mb-4">
 
-            <!-- Google 
+            <!-- Google -->
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google"
                 viewBox="0 0 16 16">
@@ -328,7 +115,7 @@
 
             </a>
 
-            <!-- Instagram 
+            <!-- Instagram -->
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
 
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
@@ -338,7 +125,7 @@
               </svg>
             </a>
 
-            <!-- Github 
+            <!-- Github -->
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
                 viewBox="0 0 16 16">
@@ -347,22 +134,20 @@
               </svg>
             </a>
           </section>
-          <!-- Section: Social media
+          <!-- Section: Social media -->
         </div>
-        <!-- Grid container 
+        <!-- Grid container -->
 
-        <!-- Copyright -
+        <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
           © 2022 Copyright:
           <a class="text-white" href="#">Skinggez.com</a>
         </div>
-        <!-- Copyright 
+        <!-- Copyright -->
       </footer>
     </div>
   </div>
 
-
-   <script src="JavaScript/script.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -373,8 +158,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
--->
-<script src="JavaScript/script.js"></script>
+
 </body>
 
 </html>
