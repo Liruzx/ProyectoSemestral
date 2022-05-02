@@ -42,8 +42,7 @@ if(entrar){
 }
 
 
-//hacer los oneclick pa las acciones qls  pero ya le supe mas o menos gente full sex 
-//ahora saldre asi q en la tarde le sigo un abrazo.
+
 
 
 } )
