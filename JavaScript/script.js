@@ -32,7 +32,4 @@ cantidadEl_one.addEventListener('input', calculate);
 monedaEl_two.addEventListener('change', calculate);
 cantidadEl_two.addEventListener('input', calculate);
 
-
-
-
 calculate();
