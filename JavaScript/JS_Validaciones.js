@@ -19,10 +19,10 @@ form.addEventListener("submit", e=>{
     let validar = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 
-    if ( usuario.value.length < 1 ) {
+    if ( usuario.value.length < 7 ) {
 
 
-        men += "Debe ingresar un usuario.<br>";
+        men += "Debe ingresar un usuario, y debe tener mas de 7 caracteres.<br>";
         entrar = true;
 
     } 
@@ -48,13 +48,15 @@ form.addEventListener("submit", e=>{
     }
 
 
-    if (contra.value.length == 0){
+    if (contra.value.length < 7){
 
-        men += "Debe ingresar una contraseña válida.<br>";
+        men += "Debe ingresar una contraseña válida. Esta debe ser mayor a 7 caracteres.<br>";
         entrar = true;
 
 
     }
+        
+    
 
 
     if (contra.value != confi_contra.value ){
