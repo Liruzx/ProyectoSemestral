@@ -76,3 +76,10 @@
     margin-top: -20px;
 
 }
+
+.juegos{
+    border-radius: 10px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
