@@ -36,7 +36,7 @@
                 <ul class="navbar-nav">
                     
                     <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                    
+                    <li class="nav-item"><a class="nav-link"  type="button" data-bs-toggle="offcanvas"  href="#demo">Usuario</a></li>
                     
                     
                     
@@ -44,10 +44,27 @@
             </div>
 
             
+            
 
 
         </div>
     </nav>
+
+    <!--AQUI ESTA EL OFFCANVAS-->
+
+    <div class="offcanvas offcanvas-end" id="demo">
+        <div class="offcanvas-header">
+          <img src="imagenes/usuario.png" width="100px"  class="offcanvas-title">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Nombre de usuario: Usuario</p>
+          <p>Correo: ejemplo@gmail.zom</p>
+          
+          <button class="btn btn-secondary" type="button">Editar</button>
+          <a href="paginaPrincipal.html"><button class="btn btn-secondary"  type="button">Cerrar sesion</button></a>
+        </div>
+      </div>
 
 
     <!--CARRUSEL AHRE-->
