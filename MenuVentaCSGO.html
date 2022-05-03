@@ -49,13 +49,15 @@
     </nav>
 
     <div class="container">
+        
         <div class="row">
-            <h1 class="titulo">Publica tu Skin!</h1>
+            <h1 class="titulo" style="text-align: center; background-color: black;  border: whitesmoke 5px dashed;">Publica tu Skin</h1>
         </div>
+
         <div class="row">
             <form method="post" name="FormVenta" enctype="multipart/form-data" id="form">
                 <div class="input-group form-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <span class="input-group-text" id="basic-addon1">👤</span>
                     <input id="usser" type="text" class="form-control" placeholder="Nombre de usuario">
                 </div>
 
@@ -90,10 +92,23 @@
                     </select>
                 </div>
 
-                <div class="input-group form-group">
+
+
+                <div class="form-group mb-3">
+                    
+                    <input type="file" class="form-control" id="upload" required>
+    
+                        
+                </div>
+
+                <div class="input-group form-group mb-3">
                     <span class="input-group-text">Desipción adicional</span>
                     <textarea class="form-control" ></textarea>
                 </div>
+
+
+
+
 
                 <div class="form-group">
                     <button class="btn btn-light" style="margin-top: 10px;" type="reset">Borrar todo</button>
