@@ -13,7 +13,8 @@ form.addEventListener("submit", e=>{
     e.preventDefault();
 
     let men = "";
-    
+    let espacios = false;
+    let cont = 0;
     let entrar = false;
     let date_regex = /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(0[1-9]|1[1-9]|2[1-9])$/;
     let validar = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -22,7 +23,7 @@ form.addEventListener("submit", e=>{
     if ( usuario.value.length < 7 ) {
 
 
-        men += "Debe ingresar un usuario, y debe tener mas de 7 caracteres.<br>";
+        men += "Debe ingresar un usuario valido, y debe tener mas de 7 caracteres.<br>";
         entrar = true;
 
     } 
@@ -42,20 +43,60 @@ form.addEventListener("submit", e=>{
         
     }else{
 
-        men+= "Debe ingresar la fecha con el siguiente formato: DD/MM/AA<br>"
+        men+= "Debe ingresar una fecha valida<br>"
         entrar = true
 
     }
 
+    if(contra.value.length==0){
 
-    if (contra.value.length < 7){
+        men += "Debe ingresar una contraseña válida.<br>";
+        entrar = true;
+    }
 
-        men += "Debe ingresar una contraseña válida. Esta debe ser mayor a 7 caracteres.<br>";
+    while (!espacios && (cont < contra.value.length)) {
+        if (contra.value.charAt(cont) == " ")
+          espacios = true;
+        cont++;
+      }
+         
+      if (espacios) {
+        men += "La contraseña no puede tener espacios en blanco.<br>";
+        entrar = true;
+        
+
+        return false;
+      }
+
+
+
+    if (contra.value.length < 7 ){
+
+        men += "Esta debe ser mayor a 7 caracteres.<br>";
+        entrar = true;
+
+
+    } 
+    if(contra.value.match(/[a-z]/g)){
+
+
+    }else{
+
+        men += "Debe tener al menos 1 letra.<br>";
+        entrar = true;
+
+    }
+
+    if (contra.value.match(/[$@$!%*?&#.]/g)){
+
+
+    }else{
+        men += "Debe tener al menos 1 caracter especial.<br>";
         entrar = true;
 
 
     }
-        
+   
     
 
 
